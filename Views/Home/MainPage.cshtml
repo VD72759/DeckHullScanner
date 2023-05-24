@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Main Page";
+}
+
+<script src="~/js/mainpage.js" asp-append-version="true"></script>   b<!-- Old code -->
+@*<script src="~/js/mainpage1.js" asp-append-version="true"></script>*@  <!-- New -->
+
+<div class="row">
+    <div class="wrapper">
+        <div id="content-panel" class="scanner">
+
+            <div class="top-header row">
+                <label class="EMPLabel col-md-12 col-12 text-align-center">EMP NUMBER: @ViewBag.EmpId</label>
+                <input type="hidden" style="display:none" id="EmployeeNumber" value="@ViewBag.EmpId" />
+            </div>
+            <div class="scanner-keys">
+                <div class="row no-margin-right no-margin-left margin-bottom-15px">
+                    <div class="col-md-12 col-12">
+                         <label class="EMPLabel">END UNIT</label>
+                    </div>
+                    <div class="col-md-12 col-12">
+                        <input type="text" id="EndUnit" class="col-md-12 col-12" value="" />
+                    </div>
+                </div>
+                <div class="row no-margin-right no-margin-left">
+                    <div class="col-md-12 col-12">
+                        <label class="EMPLabel">DECK/HULL</label>
+                    </div>
+                    <div class="col-md-12 col-12">
+                        <input type="text" id="ItemPart" class="col-md-12 col-12" value="" />
+                    </div>
+                </div>
+                <div class="row no-margin-right no-margin-left">
+                    <div class="col-md-12 col-12" style="text-align:center">PREVIOUS SCAN</div>
+                    <div class="row no-margin-right no-margin-left margin-bottom-15px">
+                        <div class="col-md-12 col-12">
+                            <label class="EMPLabel">END UNIT</label>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <label id="PreEndUnit" class="col-md-12 col-12"></label>
+                        </div>
+                    </div>
+                    <div class="row no-margin-right no-margin-left">
+                        <div class="col-md-12 col-12">
+                            <label class="EMPLabel">DECK/HULL</label>
+                        </div>
+                        <div class="col-md-12 col-12">
+                            <label id="PreItemPart" class="col-md-12 col-12"></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row no-margin-right no-margin-left">
+                    <div class="col-md-12 col-12">
+                        <label id="responseMessage" class="responseMessage">&nbsp;</label>
+                    </div>
+                </div>
+
+                <!--
+                <div class="row no-margin-right no-margin-left">
+                    <div class="col-md-12 col-12">
+                        <button type="button" value="override" class="btn">APPR. OVERRIDE</button>
+                    </div>
+                </div>
+                -->
+                <div class="row no-margin-right no-margin-left">
+                    <div class="col-md-12 col-12">
+                        <button type="button" value="clear" class="btn">CLEAR</button>
+                    </div>
+                </div>
+                <div class="row no-margin-right no-margin-left">
+                    <div class="col-md-12 col-12">
+                        <button type="button" value="logout" class="btn">LOGOUT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

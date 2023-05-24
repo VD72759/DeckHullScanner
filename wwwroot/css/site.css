@@ -1,0 +1,112 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+button{
+    padding: 0px !important;
+}
+
+.margin-bottom-15px{
+    margin-bottom:15px !important;
+}
+.text-align-center {
+    text-align: center !important;
+}
+.responseMessage {
+    width:100%;
+    padding-top: 10px;
+    padding-bottom:20px;
+    text-align: left !important;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #CCC;
+}
+.scanner {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.EMPLabel {
+    font-size: 18px !important;
+    font-weight: bold;
+    text-align: right;
+}
+.HalfWidth {
+    width: 50% !important;
+}
+.OneThirdWidth {
+    width: 33.3% !important;
+}
+.FullWidth {
+    width: 100% !important;
+}
+.top-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.scanner-keys {
+    background-color: #EEE;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.no-margin-right {
+    margin-right:0px !important;
+}
+.no-margin-left {
+    margin-left:0px !important;
+}
+
+.scanner-keys .col-md-4 > button,
+.scanner-keys .col-md-6 > button,
+.scanner-keys .col-md-12 > button{
+    width: 100%;
+    padding: 4px !important;
+    border: 1px solid #DDD;
+    margin-bottom: 10px !important;
+    background-color: #CCC;
+    font-weight: bold;
+}
+
+.scanner-keys .col-md-4 > button:hover,
+.scanner-keys .col-md-6 > button:hover,
+.scanner-keys .col-md-12 > button:hover{
+    background-color: #BBB;
+}
+
+.scanner-keys .col-md-6 > button.btn-white {
+    background-color: #FFF;
+    color: #333;
+}
+
+.btn-selected {
+    background-color: #333 !important;
+    color: #FFF !important;
+}
+
+.version{
+    width:100% !important;
+    text-align:center;
+    color:blue;
+    font-size:12px;
+    font-weight:bold;
+}
